@@ -2,6 +2,7 @@
 
 public class BreakCubes : MonoBehaviour
 {
+    public GameObject restartButton;
     private bool _isCollisionSet;
     private void OnCollisionEnter(Collision other)
     {
@@ -15,6 +16,8 @@ public class BreakCubes : MonoBehaviour
                 child.SetParent(null);
             }
 
+            restartButton.SetActive(true);
+            Camera.main.transform.position -= new Vector3(1f, 0f, 3f);
             Destroy(other.gameObject);
             _isCollisionSet = true;
         }

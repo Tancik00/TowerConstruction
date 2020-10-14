@@ -10,8 +10,11 @@ public class GameController : MonoBehaviour
     public Transform cubeThatDefinesPlace;
     public GameObject cubePref;
     public Transform cubesParent;
+    
     private CubePos _currentCube = new CubePos(0, 1, 0);
     private Rigidbody cubesParentRigidBody;
+    private Coroutine _showPossibleCubePlace;
+    private bool _isLose;
 
     private List<Vector3> _cubesPositions = new List<Vector3>()
     {
@@ -30,27 +33,42 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         cubesParentRigidBody = cubesParent.gameObject.GetComponent<Rigidbody>();
-        StartCoroutine(ShowPossibleCubePlace());
+        _showPossibleCubePlace = StartCoroutine(ShowPossibleCubePlace());
+    }
+
+    private void Update() 
+    {
+        if (!_isLose && cubesParentRigidBody.velocity.magnitude > 0.1f)
+        {
+            Destroy(cubeThatDefinesPlace.gameObject);
+            _isLose = true;
+            StopCoroutine(_showPossibleCubePlace);
+        }
     }
 
     public void SetCube()
     {
-        GameObject newCube = Instantiate(cubePref, cubeThatDefinesPlace.position, Quaternion.identity);
-        newCube.transform.SetParent(cubesParent);
-        _currentCube.SetVector(cubeThatDefinesPlace.position);
-        _cubesPositions.Add(_currentCube.GetVector());
+        if (cubeThatDefinesPlace != null)
+        {
+            GameObject newCube = Instantiate(cubePref, cubeThatDefinesPlace.position, Quaternion.identity);
+            newCube.transform.SetParent(cubesParent);
+            _currentCube.SetVector(cubeThatDefinesPlace.position);
+            _cubesPositions.Add(_currentCube.GetVector());
 
-        cubesParentRigidBody.isKinematic = true;
-        cubesParentRigidBody.isKinematic = false;
+            cubesParentRigidBody.isKinematic = true;
+            cubesParentRigidBody.isKinematic = false;
 
-        SpawnPossiblePositions();
+            SpawnPossiblePositions();
+        }
     }
 
     private IEnumerator ShowPossibleCubePlace()
     {
-        SpawnPossiblePositions();
-        yield return new WaitForSeconds(cubeChangingPlaceSpeed);
-        StartCoroutine(ShowPossibleCubePlace());
+        while (true)
+        {
+            SpawnPossiblePositions();
+            yield return new WaitForSeconds(cubeChangingPlaceSpeed);
+        }
     }
 
     private void SpawnPossiblePositions()
