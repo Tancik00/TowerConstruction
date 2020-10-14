@@ -10,11 +10,13 @@ public class GameController : MonoBehaviour
     public Transform cubeThatDefinesPlace;
     public GameObject cubePref;
     public Transform cubesParent;
+    public GameObject[] objectsAtStartGame;
     
     private CubePos _currentCube = new CubePos(0, 1, 0);
     private Rigidbody cubesParentRigidBody;
     private Coroutine _showPossibleCubePlace;
     private bool _isLose;
+    private bool _isGameStarted;
 
     private List<Vector3> _cubesPositions = new List<Vector3>()
     {
@@ -50,6 +52,14 @@ public class GameController : MonoBehaviour
     {
         if (cubeThatDefinesPlace != null)
         {
+            if (!_isGameStarted)
+            {
+                _isGameStarted = true;
+                foreach (var obj in objectsAtStartGame)
+                {
+                    obj.SetActive(false);
+                }
+            }
             GameObject newCube = Instantiate(cubePref, cubeThatDefinesPlace.position, Quaternion.identity);
             newCube.transform.SetParent(cubesParent);
             _currentCube.SetVector(cubeThatDefinesPlace.position);
