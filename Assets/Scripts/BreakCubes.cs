@@ -17,7 +17,8 @@ public class BreakCubes : MonoBehaviour
             }
 
             restartButton.SetActive(true);
-            Camera.main.transform.position -= new Vector3(1f, 0f, 3f);
+            Camera.main.transform.localPosition -= new Vector3(0f, 0f, 3f);
+            Camera.main.gameObject.AddComponent<CameraShake>();
             Destroy(other.gameObject);
             _isCollisionSet = true;
         }

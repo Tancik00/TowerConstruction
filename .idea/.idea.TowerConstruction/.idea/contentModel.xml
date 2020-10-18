@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BreakCubes.cs" t="Include" />
+          <e p="CameraShake.cs" t="Include" />
           <e p="CanvasButtons.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="RotateCamera.cs" t="Include" />
