@@ -3,6 +3,7 @@
 public class BreakCubes : MonoBehaviour
 {
     public GameObject restartButton;
+    public GameObject explosion;
     private bool _isCollisionSet;
     private void OnCollisionEnter(Collision other)
     {
@@ -19,6 +20,11 @@ public class BreakCubes : MonoBehaviour
             restartButton.SetActive(true);
             Camera.main.transform.localPosition -= new Vector3(0f, 0f, 3f);
             Camera.main.gameObject.AddComponent<CameraShake>();
+
+            Instantiate(explosion,
+                new Vector3(other.contacts[0].point.x, other.contacts[0].point.y, other.contacts[0].point.z),
+                Quaternion.identity);
+            
             Destroy(other.gameObject);
             _isCollisionSet = true;
         }

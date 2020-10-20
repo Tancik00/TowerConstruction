@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
     public float cubeChangingPlaceSpeed = 0.5f;
     public Transform cubeThatDefinesPlace;
     public GameObject cubePref;
+    public GameObject cubeEffectPref;
     public Transform cubesParent;
     public GameObject[] objectsAtStartGame;
     
@@ -75,6 +76,8 @@ public class GameController : MonoBehaviour
             _currentCube.SetVector(cubeThatDefinesPlace.position);
             _cubesPositions.Add(_currentCube.GetVector());
 
+            Instantiate(cubeEffectPref, newCube.transform.position, Quaternion.identity);
+            
             cubesParentRigidBody.isKinematic = true;
             cubesParentRigidBody.isKinematic = false;
 

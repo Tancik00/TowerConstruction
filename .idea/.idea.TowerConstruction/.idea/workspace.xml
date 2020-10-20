@@ -45,9 +45,9 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -99,7 +99,8 @@
       <workItem from="1602671448126" duration="4573000" />
       <workItem from="1603016901877" duration="5407000" />
       <workItem from="1603027623970" duration="598000" />
-      <workItem from="1603032887243" duration="2239000" />
+      <workItem from="1603032887243" duration="3750000" />
+      <workItem from="1603184921842" duration="518000" />
     </task>
     <servers />
   </component>

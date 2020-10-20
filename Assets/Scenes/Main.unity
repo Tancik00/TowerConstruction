@@ -291,12 +291,12 @@ MonoBehaviour:
   cubeChangingPlaceSpeed: 0.5
   cubeThatDefinesPlace: {fileID: 1763582883}
   cubePref: {fileID: 9201717398461976244, guid: b65d7d9e3d877a24eb84870fd5405dcc, type: 3}
+  cubeEffectPref: {fileID: 180128, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
   cubesParent: {fileID: 1847719518}
   objectsAtStartGame:
   - {fileID: 1251883481}
   - {fileID: 1877390085}
   - {fileID: 2134826133}
-  mainCamera: {fileID: 963194228}
 --- !u!4 &477244144
 Transform:
   m_ObjectHideFlags: 0
@@ -943,6 +943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartButton: {fileID: 185779874}
+  explosion: {fileID: 110790, guid: 0f75f6db4a318f54382e0c98b2226db8, type: 3}
 --- !u!65 &1337509107
 BoxCollider:
   m_ObjectHideFlags: 0
