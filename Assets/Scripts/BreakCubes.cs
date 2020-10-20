@@ -20,11 +20,15 @@ public class BreakCubes : MonoBehaviour
             restartButton.SetActive(true);
             Camera.main.transform.localPosition -= new Vector3(0f, 0f, 3f);
             Camera.main.gameObject.AddComponent<CameraShake>();
+            
+            if (PlayerPrefs.GetInt("musicOn")==1)
+                GetComponent<AudioSource>().Play();
 
-            Instantiate(explosion,
+            GameObject explosionEffect = Instantiate(explosion,
                 new Vector3(other.contacts[0].point.x, other.contacts[0].point.y, other.contacts[0].point.z),
                 Quaternion.identity);
-            
+            Destroy(explosionEffect, 2f);
+
             Destroy(other.gameObject);
             _isCollisionSet = true;
         }

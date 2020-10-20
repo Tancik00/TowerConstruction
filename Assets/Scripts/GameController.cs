@@ -75,9 +75,12 @@ public class GameController : MonoBehaviour
             newCube.transform.SetParent(cubesParent);
             _currentCube.SetVector(cubeThatDefinesPlace.position);
             _cubesPositions.Add(_currentCube.GetVector());
-
-            Instantiate(cubeEffectPref, newCube.transform.position, Quaternion.identity);
             
+            if (PlayerPrefs.GetInt("musicOn")==1)
+                GetComponent<AudioSource>().Play();
+
+            GameObject effect = Instantiate(cubeEffectPref, newCube.transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
             cubesParentRigidBody.isKinematic = true;
             cubesParentRigidBody.isKinematic = false;
 

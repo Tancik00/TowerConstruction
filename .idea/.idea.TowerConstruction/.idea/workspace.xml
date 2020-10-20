@@ -35,7 +35,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../JM/jollyjam/Assets/Scripts/MusicController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../JM/jollyjam/Assets/Scripts/MainMenuUIManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MusicController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Crossy_Road_Prototype/Assets/Scripts/New Folder/CharController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../JM/jollyjam/Assets/Scripts/AppStateData.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Crossy_Road_Prototype/Assets/Scripts/New Folder/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" root0="FORCE_HIGHLIGHTING" />
@@ -43,11 +47,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" />
       </list>
     </option>
   </component>
@@ -100,7 +105,9 @@
       <workItem from="1603016901877" duration="5407000" />
       <workItem from="1603027623970" duration="598000" />
       <workItem from="1603032887243" duration="3750000" />
-      <workItem from="1603184921842" duration="518000" />
+      <workItem from="1603184921842" duration="3954000" />
+      <workItem from="1603201152680" duration="113000" />
+      <workItem from="1603201766679" duration="814000" />
     </task>
     <servers />
   </component>
@@ -133,10 +140,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="479" y="102" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1600545926103" />
-    <state x="582" y="164" key="RollbackChangesDialog" timestamp="1603017619180">
+    <state x="582" y="164" key="RollbackChangesDialog" timestamp="1603186141484">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="582" y="164" key="RollbackChangesDialog/0.43.1536.821@0.43.1536.821" timestamp="1603017619180" />
+    <state x="582" y="164" key="RollbackChangesDialog/0.43.1536.821@0.43.1536.821" timestamp="1603186141484" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1600540181670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
