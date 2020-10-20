@@ -2,15 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 public class GameController : MonoBehaviour
 {
     public float cubeChangingPlaceSpeed = 0.5f;
     public Transform cubeThatDefinesPlace;
+    public Transform cubesParent;
     public GameObject cubePref;
     public GameObject cubeEffectPref;
-    public Transform cubesParent;
+    public Text scoreTxt;
     public GameObject[] objectsAtStartGame;
     
     private CubePos _currentCube = new CubePos(0, 1, 0);
@@ -39,6 +41,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        scoreTxt.text = "<size=40><color=#EE2244>Best:</color></size> " + PlayerPrefs.GetInt("score") + "\n<size=30>Now:</size> 0";
         mainCam = Camera.main.transform;
         _camMoveYPos = 5.9f + _currentCube.yPos - 1f;
         cubesParentRigidBody = cubesParent.gameObject.GetComponent<Rigidbody>();
@@ -76,7 +79,7 @@ public class GameController : MonoBehaviour
             _currentCube.SetVector(cubeThatDefinesPlace.position);
             _cubesPositions.Add(_currentCube.GetVector());
             
-            if (PlayerPrefs.GetInt("musicOn")==1)
+            if (AppState.IsMusicOn)
                 GetComponent<AudioSource>().Play();
 
             GameObject effect = Instantiate(cubeEffectPref, newCube.transform.position, Quaternion.identity);
@@ -159,6 +162,13 @@ public class GameController : MonoBehaviour
             if (Mathf.Abs((int)pos.z) > maxZ)
                 maxZ = (int)pos.z;
         }
+
+        int yCubeCount = maxY - 1;
+        
+        if (PlayerPrefs.GetInt("score") < yCubeCount)
+            PlayerPrefs.SetInt("score", yCubeCount);
+
+        scoreTxt.text = "<size=40><color=#EE2244>Best:</color></size> " + PlayerPrefs.GetInt("score") + "\n<size=30>Now:</size> " + yCubeCount;
         
         _camMoveYPos = 5.9f + _currentCube.yPos - 1f;
 

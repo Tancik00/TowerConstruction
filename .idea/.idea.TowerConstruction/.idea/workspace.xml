@@ -25,6 +25,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/../Crossy_Road_Prototype/Assets/Scripts/New Folder/Camera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,9 +52,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AppState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
       </list>
     </option>
   </component>
@@ -107,7 +110,7 @@
       <workItem from="1603032887243" duration="3750000" />
       <workItem from="1603184921842" duration="3954000" />
       <workItem from="1603201152680" duration="113000" />
-      <workItem from="1603201766679" duration="814000" />
+      <workItem from="1603201766679" duration="3404000" />
     </task>
     <servers />
   </component>

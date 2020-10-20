@@ -21,7 +21,7 @@ public class BreakCubes : MonoBehaviour
             Camera.main.transform.localPosition -= new Vector3(0f, 0f, 3f);
             Camera.main.gameObject.AddComponent<CameraShake>();
             
-            if (PlayerPrefs.GetInt("musicOn")==1)
+            if (AppState.IsMusicOn)
                 GetComponent<AudioSource>().Play();
 
             GameObject explosionEffect = Instantiate(explosion,
