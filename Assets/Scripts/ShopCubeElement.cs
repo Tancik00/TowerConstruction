@@ -26,7 +26,7 @@ public class ShopCubeElement : MonoBehaviour
       {
          _image.color = color;
          _txt.text = "unlocked";
-         gameController.possibleCubeColors.Add(color);
+         //gameController.possibleCubeColors.Add(color);
       }
    }
 }

@@ -77,7 +77,7 @@ public class GameController : MonoBehaviour
             }
             
             GameObject newCube = Instantiate(cubePref, cubeThatDefinesPlace.position, Quaternion.identity);
-            newCube.GetComponent<MeshRenderer>().material.color = possibleCubeColors[Random.Range(0, possibleCubeColors.Count)];
+            //newCube.GetComponent<MeshRenderer>().material.color = possibleCubeColors[Random.Range(0, possibleCubeColors.Count)];
             newCube.transform.SetParent(cubesParent);
             _currentCube.SetVector(cubeThatDefinesPlace.position);
             _cubesPositions.Add(_currentCube.GetVector());
