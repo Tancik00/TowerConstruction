@@ -22,10 +22,11 @@
     <list default="true" id="1d617cac-186e-4c77-b067-4be2729003f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TowerConstruction/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TowerConstruction/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TowerConstruction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TowerConstruction/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cube.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cube.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/CubeThatDefinesPlace.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/CubeThatDefinesPlace.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +52,12 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/RotateCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraShake.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AppState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShopCubeElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
       </list>
     </option>
   </component>
@@ -111,6 +113,9 @@
       <workItem from="1603184921842" duration="3954000" />
       <workItem from="1603201152680" duration="113000" />
       <workItem from="1603201766679" duration="3404000" />
+      <workItem from="1603377702933" duration="2107000" />
+      <workItem from="1603704072360" duration="847000" />
+      <workItem from="1604156958327" duration="4682000" />
     </task>
     <servers />
   </component>
@@ -143,10 +148,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="479" y="102" key="RiderGenerateDialog/0.0.1536.824@0.0.1536.824" timestamp="1600545926103" />
-    <state x="582" y="164" key="RollbackChangesDialog" timestamp="1603186141484">
+    <state x="582" y="164" key="RollbackChangesDialog" timestamp="1604159872810">
       <screen x="0" y="43" width="1536" height="821" />
     </state>
-    <state x="582" y="164" key="RollbackChangesDialog/0.43.1536.821@0.43.1536.821" timestamp="1603186141484" />
+    <state x="582" y="164" key="RollbackChangesDialog/0.43.1536.821@0.43.1536.821" timestamp="1604159872810" />
     <state x="0" y="0" key="SettingsEditor" timestamp="1600540181670">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

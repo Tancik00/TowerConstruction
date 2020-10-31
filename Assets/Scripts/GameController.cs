@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
     public GameObject cubeEffectPref;
     public Text scoreTxt;
     public GameObject[] objectsAtStartGame;
+    public List<Color> possibleCubeColors;
     
     private CubePos _currentCube = new CubePos(0, 1, 0);
     private Rigidbody cubesParentRigidBody;
@@ -74,7 +75,9 @@ public class GameController : MonoBehaviour
                     obj.SetActive(false);
                 }
             }
+            
             GameObject newCube = Instantiate(cubePref, cubeThatDefinesPlace.position, Quaternion.identity);
+            newCube.GetComponent<MeshRenderer>().material.color = possibleCubeColors[Random.Range(0, possibleCubeColors.Count)];
             newCube.transform.SetParent(cubesParent);
             _currentCube.SetVector(cubeThatDefinesPlace.position);
             _cubesPositions.Add(_currentCube.GetVector());
