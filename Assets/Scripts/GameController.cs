@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
     public GameObject restartButton;
     public Text scoreTxt;
     public GameObject[] objectsAtStartGame;
+    public List<Color> cubeColors;
     public List<Color> possibleCubeColors;
     
     private CubePos _currentCube = new CubePos(0, 1, 0);
@@ -48,6 +49,22 @@ public class GameController : MonoBehaviour
         _camMoveYPos = 5.9f + _currentCube.yPos - 1f;
         cubesParentRigidBody = cubesParent.gameObject.GetComponent<Rigidbody>();
         _showPossibleCubePlace = StartCoroutine(ShowPossibleCubePlace());
+        SetPossibleCubeColors();
+    }
+
+    private void SetPossibleCubeColors()
+    {
+        possibleCubeColors.Add(cubeColors[0]);
+        if (PlayerPrefs.GetInt("score") >= 5)
+            possibleCubeColors.Add(cubeColors[1]);
+        if (PlayerPrefs.GetInt("score") >= 10)
+            possibleCubeColors.Add(cubeColors[2]);
+        if (PlayerPrefs.GetInt("score") >= 15)
+            possibleCubeColors.Add(cubeColors[3]);
+        if (PlayerPrefs.GetInt("score") >= 20)
+            possibleCubeColors.Add(cubeColors[4]);
+        if (PlayerPrefs.GetInt("score") >= 25)
+            possibleCubeColors.Add(cubeColors[5]);
     }
 
     private void Update() 
@@ -83,7 +100,7 @@ public class GameController : MonoBehaviour
             }
             
             GameObject newCube = Instantiate(cubePref, cubeThatDefinesPlace.position, Quaternion.identity);
-            //newCube.GetComponent<MeshRenderer>().material.color = possibleCubeColors[Random.Range(0, possibleCubeColors.Count)];
+            newCube.GetComponent<MeshRenderer>().material.color = possibleCubeColors[Random.Range(0, possibleCubeColors.Count)];
             newCube.transform.SetParent(cubesParent);
             _currentCube.SetVector(cubeThatDefinesPlace.position);
             _cubesPositions.Add(_currentCube.GetVector());
