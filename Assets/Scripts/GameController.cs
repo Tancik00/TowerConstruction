@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +6,6 @@ using Random = UnityEngine.Random;
 
 public class GameController : MonoBehaviour
 {
-    public float cubeChangingPlaceSpeed = 0.5f;
     public Transform cubeThatDefinesPlace;
     public Transform cubesParent;
     public GameObject cubePref;
@@ -123,7 +121,7 @@ public class GameController : MonoBehaviour
         while (true)
         {
             SpawnPossiblePositions();
-            yield return new WaitForSeconds(cubeChangingPlaceSpeed);
+            yield return new WaitForSeconds(PlayerPrefs.GetFloat("cubeSpeed", 0.5f));
         }
     }
 

@@ -12,6 +12,7 @@
           <e p="CameraShake.cs" t="Include" />
           <e p="CanvasButtons.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
+          <e p="GameModeController.cs" t="Include" />
           <e p="MusicController.cs" t="Include" />
           <e p="RotateCamera.cs" t="Include" />
           <e p="ShopCubeElement.cs" t="Include" />

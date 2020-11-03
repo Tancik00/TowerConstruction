@@ -1,10 +1,10 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CanvasButtons : MonoBehaviour
 {
     public GameObject shopPanel;
+    public GameObject settingPanel;
 
     public void ResetScene()
     {
@@ -19,5 +19,10 @@ public class CanvasButtons : MonoBehaviour
     public void CloseShop()
     {
         shopPanel.SetActive(false);
+    }
+
+    public void OpenOrCloseSettings()
+    {
+        settingPanel.SetActive(!settingPanel.activeSelf);
     }
 }
