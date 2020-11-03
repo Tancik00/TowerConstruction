@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour
     public Transform cubesParent;
     public GameObject cubePref;
     public GameObject cubeEffectPref;
+    public GameObject restartButton;
     public Text scoreTxt;
     public GameObject[] objectsAtStartGame;
     public List<Color> possibleCubeColors;
@@ -53,14 +54,19 @@ public class GameController : MonoBehaviour
     {
         if (!_isLose && cubesParentRigidBody.velocity.magnitude > 0.1f)
         {
-            Destroy(cubeThatDefinesPlace.gameObject);
+            EndTheGame();
             _isLose = true;
-            StopCoroutine(_showPossibleCubePlace);
         }
         
         mainCam.localPosition = Vector3.MoveTowards(mainCam.localPosition,
             new Vector3(mainCam.localPosition.x, _camMoveYPos, mainCam.localPosition.z),
             Time.deltaTime * _camMoveSpeed);
+    }
+    
+    private void EndTheGame()
+    {
+        Destroy(cubeThatDefinesPlace.gameObject);
+        StopCoroutine(_showPossibleCubePlace);
     }
 
     public void SetCube()
@@ -129,8 +135,11 @@ public class GameController : MonoBehaviour
 
         if (positions.Count > 1)
             cubeThatDefinesPlace.position = positions[Random.Range(0, positions.Count)];
-        else if (positions.Count <= 0)
-            _isLose = true;
+        else if (positions.Count == 0)
+        {
+            EndTheGame();
+            restartButton.SetActive(true);
+        }
         else
             cubeThatDefinesPlace.position = positions[0];
     }

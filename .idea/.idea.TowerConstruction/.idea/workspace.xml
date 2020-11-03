@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d617cac-186e-4c77-b067-4be2729003f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +50,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakCubes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MusicController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CanvasButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShopCubeElement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -111,6 +111,7 @@
       <workItem from="1603704072360" duration="847000" />
       <workItem from="1604156958327" duration="4682000" />
       <workItem from="1604181688594" duration="448000" />
+      <workItem from="1604362909388" duration="343000" />
     </task>
     <servers />
   </component>
