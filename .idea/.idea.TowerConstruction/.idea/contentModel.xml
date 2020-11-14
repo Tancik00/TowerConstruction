@@ -6,6 +6,20 @@
     <e p="D:\U_Projects\TowerConstruction" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Honeti" t="Include">
+          <e p="I18N" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="I18NAudioSource.cs" t="Include" />
+              <e p="I18NImage.cs" t="Include" />
+              <e p="I18NSprite.cs" t="Include" />
+              <e p="I18NTextMesh.cs" t="Include" />
+            </e>
+          </e>
+          <e p="vsiocitoponadobitsia" t="Include">
+            <e p="I18N.cs" t="Include" />
+            <e p="I18NText.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="AppState.cs" t="Include" />
           <e p="BreakCubes.cs" t="Include" />
@@ -13,6 +27,7 @@
           <e p="CanvasButtons.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="GameModeController.cs" t="Include" />
+          <e p="LocalizationManager.cs" t="Include" />
           <e p="MusicController.cs" t="Include" />
           <e p="RotateCamera.cs" t="Include" />
           <e p="ShopCubeElement.cs" t="Include" />
